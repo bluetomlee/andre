@@ -1,0 +1,16 @@
+{
+    "name": "builder",
+    "version": "0.0.1",
+    "description": "a node.js-based application builder",
+    "author": "Nathan Cartwright",
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mashdraggin/{{ name }}"
+    },
+    "keywords": ["node.js", "node", "build", "builder"]
+}
