@@ -1,6 +1,6 @@
 {
     "name": "andre",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "a Node.js file-watching template compiler for ejs and underscore templates",
     "author": "Nathan Cartwright",
     "license": "MIT",
