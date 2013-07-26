@@ -1,6 +1,6 @@
 Andre
 ==============
-Andre is a Node.js file-watching template compiler for [ejs](https://github.com/visionmedia/ejs) and [underscore](http://underscorejs.org) templates.  By default it will output compiled ejs templates as javascript files, although it can optionally output rendered templates files as well.  Andre can optionally use underscore as its templating engine, or you can specify a custom template engine.
+Andre is a Node.js file-watching template compiler for [ejs](https://github.com/visionmedia/ejs) and [underscore](http://underscorejs.org) templates.  By default it will output compiled ejs templates as javascript files, although it can optionally output rendered templates files as well.  In addition to ejs, Andre can also use underscore as its templating engine, or you can specify a custom template engine.
 
 #### example
 
@@ -14,6 +14,23 @@ andre.watch('src', 'dist');
 #### installation
 
 ```npm install andre
+
+#### usage
+
+andre.watch( watchPath, [ options | outputPath ], [callback] )
+
+#### options
+
+- extension       - used to determine which files to watch and compile; set to false or '*' for all files in a directory
+- engine          - specify which template engine to use; can be set to 'underscore' (or just '_'), a custom compile function, or an object with a compile method; default is 'ejs'
+- render          - render the template; requires a data option if true; default is false
+- onDelete        - a function to be invoked when a file is deleted with a filepath paramater (by default, no action is taken)
+- outputPath      - specifies the directory path to write the output files to
+- outputExtension - specifies the file extension to append to output files; default is '.js' (or '.html' if render option is true)
+- prettify        - prettify the output; default is true; currently only for javascript output
+- sourceTemplate  - used for rendering the javascript files, this template will be passed two variables: name and source
+
+
 
 #### test
 
