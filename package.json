@@ -1,7 +1,7 @@
 {
-    "name": "builder",
+    "name": "andre",
     "version": "0.0.1",
-    "description": "a node.js-based application builder",
+    "description": "a Node.js file-watching template compiler for ejs and underscore templates",
     "author": "Nathan Cartwright",
     "license": "MIT",
     "main": "index.js",
@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/mashdraggin/{{ name }}"
+        "url": "https://github.com/mashdraggin/andre"
     },
-    "keywords": ["node.js", "node", "build", "builder"]
+    "keywords": ["node.js", "node", "ejs", "underscore", "compiler", "template", "files", "file-watcher", "watcher"]
 }

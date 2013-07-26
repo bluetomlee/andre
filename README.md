@@ -1,6 +1,6 @@
 Andre
 ==============
-Andre is a Node.js file-watching template compiler for ejs and underscore templates.  By default it will output compiled templates as javascript files, although it can optionally output rendered templates files as well.
+Andre is a Node.js file-watching template compiler for [ejs](https://github.com/visionmedia/ejs) and [underscore](http://underscorejs.org) templates.  By default it will output compiled ejs templates as javascript files, although it can optionally output rendered templates files as well.  Andre can optionally use underscore as its templating engine, or you can specify a custom template engine.
 
 #### example
 
@@ -21,7 +21,7 @@ To run tests for Andre, [Mocha](https://github.com/visionmedia/mocha) and [Expec
 
 ```npm install mocha expect.js -g
 
-To run the tests, clone this repo, cd to its local directory and type
+To run the tests, clone this repo, cd to your local repo's directory and type
 
 ```mocha
 
