@@ -13,11 +13,11 @@ andre.watch('src', 'dist');
 
 #### installation
 
-```npm install andre
+    npm install andre
 
 #### usage
 
-andre.watch( watchPath, [ options | outputPath ], [callback] )
+    andre.watch( watchPath, [ options | outputPath ], [callback] )
 
 #### options
 
@@ -28,20 +28,17 @@ andre.watch( watchPath, [ options | outputPath ], [callback] )
 - outputPath      - specifies the directory path to write the output files to
 - outputExtension - specifies the file extension to append to output files; default is '.js' (or '.html' if render option is true)
 - prettify        - prettify the output; default is true; currently only for javascript output
-- sourceTemplate  - used for rendering the javascript files, this template will be passed two variables: name and source
-
-
+- sourceTemplate  - used for rendering the javascript files, this template will be passed two variables - name and source
 
 #### test
 
 To run tests for Andre, [Mocha](https://github.com/visionmedia/mocha) and [Expect.js](https://github.com/LearnBoost/expect.js) must be installed.  If they are not, install them using npm, e.g.
 
-```npm install mocha expect.js -g
+    npm install mocha expect.js -g
 
 To run the tests, clone this repo, cd to your local repo's directory and type
 
-```mocha
-
+    mocha
 
 #### license
 
